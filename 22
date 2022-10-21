@@ -1,0 +1,1 @@
+select last_name, (LPAD(salary, 10, '$')) "SALARY" from employees where salary > 5000 and salary < 8000

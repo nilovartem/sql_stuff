@@ -1,0 +1,1 @@
+select last_name, DEPARTMENT_ID from EMPLOYEES where EMPLOYEE_ID = 176

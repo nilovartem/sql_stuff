@@ -1,0 +1,1 @@
+select MAX(SALARY) "Maximum", MIN(SALARY) "Minimum", SUM(SALARY) "Sum", ROUND(AVG(SALARY)) "Average" from EMPLOYEES

@@ -1,0 +1,1 @@
+select last_name, JOB_ID, HIRE_DATE from EMPLOYEES where LAST_NAME = 'Matos' OR LAST_NAME = 'Taylor' ORDER by HIRE_DATE ASC

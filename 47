@@ -1,0 +1,1 @@
+select emp.LAST_NAME "Employee", emp.EMPLOYEE_ID "Emp#", mgr.LAST_NAME "Manager", mgr.EMPLOYEE_ID "Mgr#" from EMPLOYEES emp, EMPLOYEES mgr where emp.MANAGER_ID = mgr.EMPLOYEE_ID order by mgr.EMPLOYEE_ID ASC

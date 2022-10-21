@@ -1,0 +1,1 @@
+select last_name, salary from employees where MANAGER_ID IN (SELECT EMPLOYEE_ID FROM EMPLOYEES where LAST_NAME = 'King')

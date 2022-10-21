@@ -1,0 +1,1 @@
+select last_name "Employee", salary "Monthly Salary" from employees where (department_id = 20 or department_id = 50) and (salary>=5000 and salary <= 12000)
