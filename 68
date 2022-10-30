@@ -1,0 +1,4 @@
+SELECT last_name, salary, COMMISSION_PCT
+FROM employees
+WHERE COMMISSION_PCT is not null
+ORDER BY salary desc, COMMISSION_PCT desc

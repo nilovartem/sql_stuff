@@ -1,0 +1,3 @@
+SELECT  column_name,DATA_TYPE
+  FROM all_tab_columns 
+  WHERE TABLE_NAME = 'DEPARTMENTS'

@@ -1,0 +1,2 @@
+SELECT EMPLOYEE_ID, LAST_NAME, SALARY, TRUNC(salary + (salary * 15/ 100 ), 0) as "New Salary", TRUNC((TRUNC(salary + (salary * 15 / 100 ), 0) - salary), 0) as "Increase"
+FROM employees

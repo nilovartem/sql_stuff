@@ -1,0 +1,6 @@
+SELECT INITCAP(LAST_NAME) as "Last Name", LENGTH(LAST_NAME) as "Length"
+FROM employees
+WHERE INSTR(last_name, 'A') = 1
+OR INSTR(last_name, 'M') = 1
+OR INSTR(last_name, 'J') = 1
+ORDER BY LAST_NAME

@@ -1,0 +1,6 @@
+SELECT e.last_name "emp_last_name", TO_CHAR (e.hire_date, 'DD-MON-YYYY', 'NLS_Date_Language = american') "emp_hire_date",
+m.last_name "man_last_name", TO_CHAR (m.hire_date, 'DD-MON-YYYY', 'NLS_Date_Language = american') "man_hire_date"
+FROM employees e
+CROSS JOIN employees m
+WHERE e.manager_id = m.employee_id
+AND m.hire_date > e.hire_date

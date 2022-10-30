@@ -1,0 +1,7 @@
+SELECT e.last_name as "e_lastname", e.hire_date as "e_hire_date",
+m.last_name as "m_lastname", m.hire_date as "m_hire_date"
+FROM employees e
+JOIN employees m on
+    e.manager_id = m.employee_id
+WHERE e.hire_date<m.hire_date 
+ORDER BY e. last_name

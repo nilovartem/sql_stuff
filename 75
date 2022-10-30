@@ -1,0 +1,2 @@
+SELECT sysdate as "Date"
+FROM dual

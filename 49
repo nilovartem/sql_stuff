@@ -1,0 +1,6 @@
+SELECT department_id
+FROM departments
+WHERE department_id <> ALL
+  (SELECT NVL(department_id, 0)
+  FROM employees
+  WHERE job_id = 'ST_CLERK')

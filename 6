@@ -1,0 +1,16 @@
+SELECT lpad(' ', level - 1) || id txt
+FROM (
+SELECT null as parent, l1.locker as id
+FROM locks l1
+WHERE not exists(
+select 1
+from locks l2
+where l2.locked = l1.locker
+)
+GROUP BY l1.locker
+UNION
+SELECT locker as parent, locked as id
+FROM locks
+)
+CONNECT BY parent = prior id
+START WITH parent is null

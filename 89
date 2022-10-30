@@ -1,0 +1,4 @@
+SELECT job_id, count(*)
+from employees
+GROUP BY job_id
+order BY job_id

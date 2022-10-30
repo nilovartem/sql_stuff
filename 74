@@ -1,0 +1,3 @@
+SELECT last_name, salary, COMMISSION_PCT
+FROM employees
+WHERE COMMISSION_PCT = 0.2

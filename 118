@@ -1,0 +1,2 @@
+SELECT last_name,salary,case when COMMISSION_PCT>0 THEN 'Yes' ELSE 'No' END
+FROM employees

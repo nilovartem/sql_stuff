@@ -1,0 +1,6 @@
+SELECT COUNT (*) total,
+SUM (DECODE (TO_CHAR (hire_date, 'YY'), 95, 1)) "1995",
+SUM (DECODE (TO_CHAR (hire_date, 'YY'), 96, 1)) "1996",
+SUM (DECODE (TO_CHAR (hire_date, 'YY'), 97, 1)) "1997",
+SUM (DECODE (TO_CHAR (hire_date, 'YY'), 98, 1)) "1998"
+FROM employees
