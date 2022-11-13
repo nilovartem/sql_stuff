@@ -1,0 +1,2 @@
+--58
+select (FIRST_NAME || ', ' || JOB_ID) "Employee and Title" from EMPLOYEES

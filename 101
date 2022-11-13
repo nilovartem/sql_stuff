@@ -1,0 +1,2 @@
+--101
+select LAST_NAME, HIRE_DATE from EMPLOYEES where HIRE_DATE > (select HIRE_DATE from EMPLOYEES where LAST_NAME = 'Davies')

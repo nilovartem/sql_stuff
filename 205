@@ -1,0 +1,2 @@
+--205
+select distinct EMPLOYEE_ID, LAST_NAME, SALARY from EMPLOYEES

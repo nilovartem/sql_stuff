@@ -1,0 +1,2 @@
+--83
+select last_name, hire_date, TO_CHAR(hire_date, 'day') as DAY from EMPLOYEES order by (TO_CHAR(hire_date, 'd')) ASC

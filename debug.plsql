@@ -1,3 +1,2 @@
-SELECT  column_name, DATA_TYPE
-  FROM all_tab_columns 
-  WHERE TABLE_NAME = 'EMPLOYEES'
+--120
+select last_name, TO_CHAR(hire_date,'day')

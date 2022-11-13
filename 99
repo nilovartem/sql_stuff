@@ -1,0 +1,2 @@
+--99
+select emp.LAST_NAME "Employee", emp.EMPLOYEE_ID "Emp#", mgr.LAST_NAME "Manager", mgr.EMPLOYEE_ID "Mgr#" FROM EMPLOYEES emp LEFT JOIN EMPLOYEES mgr ON emp.MANAGER_ID = mgr.EMPLOYEE_ID

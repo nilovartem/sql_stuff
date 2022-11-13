@@ -1,0 +1,1 @@
+select em.department_id, em.last_name, job_id from employees em inner join departments d on d.department_id = em.department_id where department_name = 'Executive'

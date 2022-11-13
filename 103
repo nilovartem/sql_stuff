@@ -1,0 +1,2 @@
+--103
+select last_name, HIRE_DATE from EMPLOYEES where DEPARTMENT_ID IN (SELECT DEPARTMENT_ID from EMPLOYEES where LAST_NAME='King') and LAST_NAME != 'King'

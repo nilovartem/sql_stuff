@@ -1,0 +1,2 @@
+--204
+select EMPLOYEES.last_name, JOBS.JOB_ID, EMPLOYEES.salary from employees JOIN JOBS ON EMPLOYEES.JOB_ID = JOBS.JOB_ID where JOBS.MAX_SALARY - EMPLOYEES.salary < 1000

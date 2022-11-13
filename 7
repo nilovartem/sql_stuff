@@ -1,0 +1,13 @@
+SELECT LEVEL, LPAD(' ', (LEVEL-1)*3) || name FROM 
+(
+  SELECT 'REG_' || region_id id, region_name name, NULL pid FROM regions r WHERE region_name = 'Americas'
+  UNION ALL
+  SELECT 'COU_' || country_id id, country_name name, 'REG_' || region_id pid FROM countries c
+  UNION ALL
+  SELECT 'LOC_' || location_id id, city name, 'COU_' || country_id pid FROM locations l
+  UNION ALL
+  SELECT 'DEP_' || department_id id, department_name name, 'LOC_' || location_id pid FROM departments d
+) 
+START WITH pid IS NULL
+CONNECT BY PRIOR id = pid
+ORDER SIBLINGS BY name
